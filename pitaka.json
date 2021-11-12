@@ -1,0 +1,26 @@
+{
+    "name":"cb-y",
+    "title": "印順法師佛學著作集",
+    "description":"基於CBETA DVD 2018",
+    "maintainer": "yapcheahshen@gmail.com",
+    "license": "CC0",
+    "format":"cbeta",
+    "labels":{
+            "bk":["LabelBook",{"resets":["c"]}], 
+            "c":["LabelLinePos",{"sequencial":true,"resets":["mu"]}],
+            "p":["LabelPage",{"caption":"頁碼","autoreset":true}], 
+            "pg":["Label",{"caption":"非正文頁碼","autoreset":true}], 
+            "mu":["LabelMulu",{"trimlocal":true, "compact":true}], 
+            "mc":["Label",{"caption":"缺字"}],
+            "h":"Label",
+            "q":"Label",
+            "t":"LabelTransclusion",
+            "w":["Label",{"caption":"巴利"}],
+            "lg":"Label"
+    },
+    "catalog":"catalog.json",
+    "transclusion":"transclusion.json",
+    "homepage":"https://github.com/accelon/cb-y",
+    "rootdir":"zip/",
+    "files":"Y\\d+.zip"
+}
