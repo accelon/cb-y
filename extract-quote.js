@@ -55,7 +55,7 @@ export const onRawContent=async (fn,rawtext,ctx)=>{
                 const [d,x,w,sim]=diffCJK(q,line,at,Math.floor(q.length*1.5));
                 if (sim>0.75) {
                     const h=makeHook(line,x,w);
-                    const addr='/'+ptk.name+'/'+ptk.pageAt(from+i,true)+h;
+                    const addr='/'+ptk.name+'/'+ptk.locOf(from+i)+h;
                     found.push([fn,lb,addr ]);
                     success=true;
                     break;
